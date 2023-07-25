@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: nginx-pod
+ labels:
+  author: Mayank
+  type: reverse-proxy
+spec:
+ containers: 
+  - name: appserver
+    image: nginx
