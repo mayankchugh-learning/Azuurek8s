@@ -1,0 +1,22 @@
+---
+- name: Configure  tomcat9
+  hosts: all
+  tasks:
+   - name: Install tomcat9
+     apt:
+      name: tomcat9
+      state: present
+   - name: copy file
+     copy:
+      src:  /home/azureuser/newfile1
+      dest: /etc/tomcat9
+   - name: change port of tomcat from 8080 to 9090
+     replace:
+      regexp: 8080
+      replace: 9090
+      path: /etc/tomcat9/server.xml
+   - name: restart tomcat9
+     service:
+      name: tomcat9
+      state: restarted
+...
