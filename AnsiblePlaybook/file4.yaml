@@ -1,0 +1,11 @@
+- name: configuring apache2
+  hosts: all
+  tasks:
+   - name: Install apache2
+     apt:
+      name: apache2
+      state: present
+   - name: Edit index.html file
+     copy:
+      content: "Welcome to Playbooks with Mayank\n"
+      dest: /var/www/html/index.html
