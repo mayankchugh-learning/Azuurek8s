@@ -9,6 +9,6 @@
        update_cache: yes
     - name: clone remote git repository
       git:
-        repo: https://github.com/ankitnarula28/GIT-Webapp.git
+        repo: https://github.com/mayankchugh-learning/Azuurek8s.git
         dest: /home/azureuser/newgit  	
 ...
