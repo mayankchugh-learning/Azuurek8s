@@ -1,0 +1,8 @@
+a: Prakash
+b: loigclabs
+c: /home/Prakash
+d: 67809
+e: /bin/bash
+f: tree
+g: present
+h: no

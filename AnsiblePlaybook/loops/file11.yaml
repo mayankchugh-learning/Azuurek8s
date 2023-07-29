@@ -1,0 +1,15 @@
+---
+- name: Install software packages
+  hosts: appserver
+  tasks:
+   - name: Install software
+     apt:
+      name: "{{item.a}}"
+      state: "{{item.b}}"
+      update_cache: "{{item.c}}"
+     with_items:
+      - {a: tree,b: present,c: no}
+      - {a: git,b: absent,c: no}
+      - {a: default-jdk,b: absent,c: no}
+      - {a: apache2,b: present,c: yes}
+...
