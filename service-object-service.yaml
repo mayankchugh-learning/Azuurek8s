@@ -11,5 +11,5 @@ spec:
     port: 80
  type: LoadBalancer
  selector:
-  author: ankit
+  author: Mayank
   type: reverse-proxy
