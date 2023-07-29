@@ -1,0 +1,5 @@
+a: Prakash
+b: logiclabs
+c: /home/Prakash
+d: 67809
+e: /bin/bash
